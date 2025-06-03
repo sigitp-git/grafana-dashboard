@@ -26,7 +26,7 @@
   "gnetId": 1860,
   "graphTooltip": 1,
   "id": 24,
-  "iteration": 1748989805149,
+  "iteration": 1748990711617,
   "links": [
     {
       "icon": "external link",
@@ -63,7 +63,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "0Bt1zsbNk"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -143,7 +143,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "0Bt1zsbNk"
+            "uid": "${datasource}"
           },
           "exemplar": false,
           "expr": "rate(sriov_vf_tx_bytes[2m])*8/(1024*1024*1024)",
@@ -158,7 +158,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "0Bt1zsbNk"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -238,7 +238,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "0Bt1zsbNk"
+            "uid": "${datasource}"
           },
           "exemplar": false,
           "expr": "(rate(sriov_vf_tx_packets[2m]))",
@@ -17090,13 +17090,13 @@
     ]
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
   "title": "Node Exporter Full - gv3-outposts-cluster",
   "uid": "rYdddlPWk-sigitp-gv3",
-  "version": 8,
+  "version": 10,
   "weekStart": ""
 }
