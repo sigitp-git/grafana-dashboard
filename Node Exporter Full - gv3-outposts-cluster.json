@@ -26,7 +26,7 @@
   "gnetId": 1860,
   "graphTooltip": 1,
   "id": 24,
-  "iteration": 1748990711617,
+  "iteration": 1748990837287,
   "links": [
     {
       "icon": "external link",
@@ -112,7 +112,7 @@
               }
             ]
           },
-          "unit": "Gbits"
+          "unit": "bps"
         },
         "overrides": []
       },
@@ -132,7 +132,9 @@
             "lastNotNull"
           ],
           "displayMode": "table",
-          "placement": "bottom"
+          "placement": "bottom",
+          "sortBy": "Max",
+          "sortDesc": true
         },
         "tooltip": {
           "mode": "single",
@@ -146,7 +148,7 @@
             "uid": "${datasource}"
           },
           "exemplar": false,
-          "expr": "rate(sriov_vf_tx_bytes[2m])*8/(1024*1024*1024)",
+          "expr": "rate(sriov_vf_tx_bytes[2m])*8",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -221,13 +223,15 @@
       "options": {
         "legend": {
           "calcs": [
+            "max",
             "min",
             "mean",
-            "max",
             "lastNotNull"
           ],
           "displayMode": "table",
-          "placement": "bottom"
+          "placement": "bottom",
+          "sortBy": "Max",
+          "sortDesc": true
         },
         "tooltip": {
           "mode": "single",
@@ -17097,6 +17101,6 @@
   "timezone": "browser",
   "title": "Node Exporter Full - gv3-outposts-cluster",
   "uid": "rYdddlPWk-sigitp-gv3",
-  "version": 10,
+  "version": 14,
   "weekStart": ""
 }
