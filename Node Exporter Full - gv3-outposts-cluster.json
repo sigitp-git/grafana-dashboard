@@ -26,7 +26,7 @@
   "gnetId": 1860,
   "graphTooltip": 1,
   "id": 24,
-  "iteration": 1748988990329,
+  "iteration": 1748989805149,
   "links": [
     {
       "icon": "external link",
@@ -75,7 +75,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 0,
+            "fillOpacity": 20,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
@@ -111,7 +111,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "Gbits"
         },
         "overrides": []
       },
@@ -124,8 +125,13 @@
       "id": 342,
       "options": {
         "legend": {
-          "calcs": [],
-          "displayMode": "list",
+          "calcs": [
+            "max",
+            "min",
+            "mean",
+            "lastNotNull"
+          ],
+          "displayMode": "table",
           "placement": "bottom"
         },
         "tooltip": {
@@ -164,7 +170,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 0,
+            "fillOpacity": 20,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
@@ -200,7 +206,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "pps"
         },
         "overrides": []
       },
@@ -213,8 +220,13 @@
       "id": 344,
       "options": {
         "legend": {
-          "calcs": [],
-          "displayMode": "list",
+          "calcs": [
+            "min",
+            "mean",
+            "max",
+            "lastNotNull"
+          ],
+          "displayMode": "table",
           "placement": "bottom"
         },
         "tooltip": {
@@ -17085,6 +17097,6 @@
   "timezone": "browser",
   "title": "Node Exporter Full - gv3-outposts-cluster",
   "uid": "rYdddlPWk-sigitp-gv3",
-  "version": 6,
+  "version": 8,
   "weekStart": ""
 }
