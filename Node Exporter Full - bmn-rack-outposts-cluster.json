@@ -26,7 +26,7 @@
   "gnetId": 1860,
   "graphTooltip": 1,
   "id": 22,
-  "iteration": 1748990845434,
+  "iteration": 1749055574935,
   "links": [
     {
       "icon": "external link",
@@ -166,7 +166,7 @@
           "refId": "B"
         }
       ],
-      "title": "SRIOV TX RX Gbps",
+      "title": "SRIOV TX RX TOTAL Gbps",
       "type": "timeseries"
     },
     {
@@ -273,7 +273,7 @@
           "refId": "B"
         }
       ],
-      "title": "SRIOV TX RX MPPS",
+      "title": "SRIOV TX RX TOTAL MPPS",
       "type": "timeseries"
     },
     {
@@ -17202,7 +17202,7 @@
     "list": [
       {
         "current": {
-          "selected": false,
+          "selected": true,
           "text": "bmn-rack-outposts-cluster_workspace - Prometheus ws-484afeca-566c-4932-8f04-828f652995c9",
           "value": "bmn-rack-outposts-cluster_workspace - Prometheus ws-484afeca-566c-4932-8f04-828f652995c9"
         },
@@ -17330,6 +17330,6 @@
   "timezone": "browser",
   "title": "Node Exporter Full - bmn-rack-outposts-cluster",
   "uid": "rYdddlPWk-sigitp",
-  "version": 13,
+  "version": 14,
   "weekStart": ""
 }
